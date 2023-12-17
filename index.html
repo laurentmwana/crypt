@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP de cryptograpphie</title>
+    <link rel="stylesheet" href="app.css">
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h2 class="header"></h2>
+    <div class="container">
+
+        <div class="card" id="cesar">
+            <h2>ALGORITHME DE CESAR</h2>
+            <div>
+                <div class="form-group">
+                    <label for="" class="form-label">Le texte que vous souhaitez chiffré</label>
+                    <textarea name="c-text" id="c-text" class="form-input"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="c-key" class="form-label">la clé de chiffrement (déchiffrement)</label>
+                    <input type="number" id="c-key" class="form-input">
+                </div>
+                <div class="output">
+                    <h4>Chiffrer : <span id="c-cp-output"></span></h4>
+                    <h4> dechiffrer : <span id="c-dcp-output"></span></h4>
+                </div>
+                <button type="button" id="c-button">Chiffrer</button>
+            </div>
+        </div>
+        <div class="card" id="affine">
+            <h2>ALGORITHME D'AFFINE</h2>
+            <div>
+                <div class="form-group">
+                    <label for="" class="form-label">Le texte que vous souhaitez chiffré</label>
+                    <textarea name="a-text" id="a-text" class="form-input"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="a-key-1" class="form-label">la première clé [1 - 25]</label>
+                    <input type="number" id="a-key-1" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="a-key-2" class="form-label">la deuxième clé [1 - N]</label>
+                    <input type="number" id="a-key-2" class="form-input">
+                </div>
+                <div class="output">
+                    <h4>Chiffrer : <span id="a-cp-output"></span></h4>
+                    <h4> dechiffrer : <span id="a-dcp-output"></span></h4>
+                </div>
+                <button type="button" id="a-button">Chiffrer</button>
+            </div>
+        </div>
+        <div class="card" id="vigenere">
+            <h2>ALGORITHME DE VIGENERE</h2>
+            <div>
+                <div class="form-group">
+                    <label for="" class="form-label">Le texte que vous souhaitez chiffré</label>
+                    <textarea name="v-text" id="v-text" class="form-input"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="v-key" class="form-label">la clé de chiffrement (déchiffrement)</label>
+                    <input type="text" id="v-key" class="form-input">
+                <div class="output">
+                    <h4>Chiffrer : <span id="v-cp-output"></span></h4>
+                    <h4> dechiffrer : <span id="v-dcp-output"></span></h4>
+                </div>
+                <button type="button" id="v-button">Chiffrer</button>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; 2023 laurent mwana
+        </div>
+    
+    </div>
+</body>
+</html>
